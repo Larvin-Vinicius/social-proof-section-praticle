@@ -15,7 +15,6 @@
 }
 
 html, body {
-    height: 100%;
     font-family: 'Spartan';
     font-size: 15px;
 }
@@ -35,12 +34,3 @@ img {
     display: block;
 }
 /**/
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
