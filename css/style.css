@@ -1,0 +1,118 @@
+@import "global.css";
+
+body {
+    max-width: 1440px;
+    margin: 0 auto; /* Centraliza o body quando a tela for maior que 1440*/
+}
+
+main {
+    margin: 0 auto;
+    max-width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 15rem;
+    margin-top: 5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+}
+
+.description {
+    grid-column: 1;
+    color: var(--dark-grayish-mgenta);
+    font-weight: 500;
+}
+
+.rating {
+    grid-column: 2;
+    grid-row: 1/ 2;
+    display: grid;
+    gap: 1rem;
+}
+
+.rating-value {
+    display: flex;
+    gap: 0.6rem;
+    background-color: var(--light-grayish-magenta);
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    max-width: 450px;
+}
+
+.rating li:nth-child(2n) {
+    justify-self: center;
+}
+
+.rating li:nth-child(3n) {
+    justify-self: end;
+}
+
+.rating-value img {
+    height: 1rem;
+}
+
+/* Container dos comentarios*/
+.container-comments {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/-1;
+    gap: 1.5rem;
+    height: 18rem;
+    padding: 0px;
+    margin-top: 2rem;
+}
+
+.container-comments li:nth-child(2n) {
+    align-self: center;
+}
+
+.container-comments li:nth-child(3n) {
+    align-self: flex-end;
+}
+
+.comments {
+    height: 15rem;
+    grid-row: 2;
+    font-weight: 400;
+    background-color: var(--very-dark-magenta);
+    border-radius: .7rem;
+    color: var(--light-grayish-magenta);
+    max-width: 30rem;
+    padding: 2rem;
+    font-size: .9rem;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 0 2rem;
+    align-items: center;
+}
+
+.user-info img {
+    max-width: 48px;
+    border-radius: 50%;
+    grid-row: 1/3;
+}
+
+.user-info h3 {
+    grid-column: 2;
+    color: var(--soft-pink);
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.user-info h2, h3 {
+    font-size: .9rem;
+}
+
+.comments p {
+    margin-top: 2rem;
+}
+
